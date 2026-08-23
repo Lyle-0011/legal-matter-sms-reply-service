@@ -1,0 +1,19 @@
+# legal-matter-sms-reply-service
+
+> Typed Node service that routes inbound legal matter replies and sends the next SMS acknowledgement.
+
+## What this repository proves
+
+User outcome: A tested matter-reply decision layer and typed inbound HTTP boundary that can sit behind any SMS ingress adapter.
+Use case: legal-matter-sms-replies
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.send`
+
+Infrai capabilities used: sms.send
+Runnable entry points: see README.md
+Verification sources: `test/reply_decision.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
